@@ -19,7 +19,7 @@ body{
     width: 14rem;
     margin-right: 6rem;
     border-radius: 0.2rem;
-    background-color: #8697b4;
+    background-color: #79808a;
     display: flex;
 }
 .filter {
@@ -52,7 +52,7 @@ body{
     height: 50%;
     /* border: 1px solid red; */
     width: 8rem;
-    background-color: #8697b4;
+    background-color: #79808a;
     border-radius: 0.2rem;
     display: flex;
 }
@@ -66,13 +66,17 @@ body{
 .fas{
     font-size: 1.5rem;
 }
+.active{
+    background-color: #414446;
+}
 /* main css */
 .modal_container{
     position: absolute;
     height: 18rem;
     width: 36rem;
     background-color: brown;
-    left: 3vw;
+    /* Variable value */
+    left: calc((100vw - 36rem)/2);
     top: 30vh;
     display: flex;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.698);
@@ -111,6 +115,7 @@ body{
 /* Task CSS */
 .main_container{
     height: 88vh;
+    overflow: auto;
     padding-top: 2rem;
     padding-left: 3rem;
     display: flex;
@@ -126,11 +131,17 @@ body{
     background-color: white;
 }
 .task_desc_container{
+    height: 80%;
     padding-left: 0.5rem;
+
 }
 .task_desc{
+    height: 70%;
+    overflow: auto;
     text-align: center;
+    word-break: break-all;
 }
 .uid{
     color: #444;
+    margin-bottom: 0.1rem;
 }
